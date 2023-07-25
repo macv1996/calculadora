@@ -13,6 +13,10 @@ let valor1resta;
 let valor2resta;
 let resultadoresta;
 
+let valor1;
+let valor2;
+let resultado;
+
 botonresta.addEventListener("click",calcular)
 
 
@@ -24,6 +28,22 @@ function calcular(){
     resultadoresta= Number(valor1resta)-Number(valor2resta)
 
     resultadohtmlresta.innerHTML=resultadoresta
+
+
+}
+
+
+boton.addEventListener("click",calcularsuma)
+
+
+function calcularsuma(){
+
+    valor1=primervalor.value
+    valor2=segundovalor.value
+
+    resultado= Number(valor1)+Number(valor2)
+
+    resultadohtml.innerHTML=resultado
 
 
 }
